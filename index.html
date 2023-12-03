@@ -15,17 +15,17 @@
             <div class="logo">Portfolio.</div>
             <div class="nav">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About me</a></li>
-                <li><a href="#">Recent projects</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#projects">Recent projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
         </div>
     </header>
     <section id="home">
     <div class="content1">
-        <div class="text1"><div class="t1">Hey there!</div>It's me <span>Pradeep </span><br>And I'm a <div class="t2"> Coder.</div> <div class="social">
+        <div class="text1"><div class="t1">Hey there!</div>It's me <span>Pradeep </span><br>And I'm a <span class="t2">Developer.</span> <div class="social">
             <a href="https://instagram.com/pradeep_7947?igshid=OGQ5ZDc2ODk2ZA==" target="_blank"><img src="instagram.svg" alt="insta"></a>
             <a href="#"><img src="facebook.svg" alt="face"></a>
             <a href="https://www.linkedin.com/in/pradeep-kh-5342aa28a/" target="_blank"><img src="linkedin.svg" alt="link"></a>
@@ -38,7 +38,30 @@
        
         
     </section>
-    
+    <section id="projects">
+        <p class="text2">PROJECTS</p>
+        <div class="pro">Web Development</div>
+        <div class="pro">Social Connect</div>
+        <div class="pro">Research Projects</div>
+    </section>
+
+    <section id="contact">
+        <div class="text2">Contact me!</div>
+        <form >
+            <div class="b1">
+                <input type="text" name="Name" id="n" placeholder="Full Name" required>
+                <br>
+                <input type="tel" name="num" id="p" placeholder="Mobile Number" required>
+            </div>
+            <div class="b2">
+                <input type="email" name="em" id="e" placeholder="example@email.com" required>
+                <br>
+                <input type="text" name="sub" id="s" placeholder="Subject">
+            </div>
+            <div class="mes"><textarea name="mes" id="m" cols="30" rows="10" placeholder="Write your message!"></textarea></div>
+            <button>Send</button>
+        </form>
+    </section>
     <footer></footer>
     <script>
         bt = document.getElementById("bt");
@@ -49,6 +72,35 @@
         pr.onclick=function(){
             window.open("fresh1.jpg");
         }
+
+        let sections = document.querySelectorAll('section');
+        let links = document.querySelectorAll('header nav a')
+
+        window.onscroll = () => {
+            sections.forEach(sec => {
+                let top = window.scrollY;
+                let offset = sec.offsetTop - 150;
+                let height = sec.offsetHeight;
+                let id = sec.getAttribute('id');
+
+                if(top >= offset && top < offset + height){
+                    links.forEach(li => {
+                    links.classList.remove('active');
+                    document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
+                });
+            };
+                });
+            
+        };
+
+        const type = new Typed('.t2',{
+            strings:['Fronted Developer', '3D editor', 'Content creator'],
+            typeSpeed:100,
+            backSpeed:100,
+            backDelay:1000,
+            loop: true
+        });
+    
     </script>
 </body>
 </html>
