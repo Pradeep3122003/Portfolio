@@ -91,6 +91,26 @@ li a:hover{
     display: inline-flex;
     border-radius: 50%;
     animation: b1 8s 1 forwards ease;
+    cursor: pointer;
+}
+section{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    
+
+}
+#about .img1{
+   display: flex;
+   margin-top: 15vh;
+   float: left;
+}
+#about .img1 img{
+     margin: auto;
+}
+
+#about{
+    background-image: linear-gradient(40deg,black,rgba(0, 66, 128, 0.515),black,black);
 }
 
 @keyframes b1 {
@@ -128,7 +148,7 @@ li a:hover{
    scale: 1.4;
 }
 
-.content1 button{
+.content1 button, #about button{
     background-color: aqua;
     padding: 3px 5px;
     border-radius: 10px;
@@ -136,8 +156,13 @@ li a:hover{
     font-weight: 900;
     margin: 0 5vw;
 }
+#about .text1{
+    font-size: calc(1.5vh + 1.5vw);
+    font-family: 'Nova Square', sans-serif;
+    margin-top: 20vh;
+}
 
-.content1 button:hover{
+.content1 button:hover, #about button:hover{
     box-shadow: 0px 0px 5px aqua;
 }
 @media screen and (max-width: 440px) {
@@ -153,9 +178,9 @@ li a:hover{
            
             display: block;
             width: 90vw;
-            
+            margin-top: 2vh;
             color: aliceblue;
-           position: absolute;
+           position: fixed;
         }
         
         .navbar ul{
@@ -214,7 +239,7 @@ li a:hover{
         }
 
         .img1{
-            margin: 4vh auto;
+            margin: 8vh auto;
             display: block;
             float: none;
             height:calc(15vh + 15vw) ;
@@ -222,6 +247,7 @@ li a:hover{
         }
         .img1 img{
             display: block;
+            margin: auto;
             float: none;
             height: calc(15vh + 15vw) ;
             width: calc(15vh + 15vw) ;
@@ -234,4 +260,29 @@ li a:hover{
         .social a img:hover{
             scale: 1.1;
         }
+       section{
+       display: inline-block;
+       }
+        #about .text1{
+            font-size: calc(1.5vh + 1.5vw);
+            width: 60vw;
+            margin-top: 10vh;
+            display: block;
+            text-align: left;
+       
+           
+        }
+
+        #about .img1{
+         
+            display: flex;
+            float: none;
+        }
+        #about .img1 img{
+            display: flex;
+            float: none;
+        }
+       #about button{
+        margin:2vh 10vw;
+       }
     }}
