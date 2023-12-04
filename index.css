@@ -309,6 +309,7 @@ section{
         
         .navbar ul{
             list-style-type: none;
+          
             display: inline;
         }
         .logo {
@@ -323,7 +324,7 @@ section{
             float: right;
             display: inline-flex;
             background-image: url("menu.png");
-           
+           z-index: 10;
             background-size: cover;
             height: calc(2.5vh + 2vw);
             width: calc(2.5vh + 2vw);
@@ -349,8 +350,8 @@ section{
         }
         .nav:hover{
             height: auto;
-            width: auto;
-            background-image: none;
+            width:auto;
+            background-image: linear-gradient(blue,black);
         }
 
         .content1{
@@ -386,6 +387,7 @@ section{
         }
        section{
        display: inline-block;
+       z-index: -1;
        }
         #about .text1{
             font-size: calc(1.5vh + 1.5vw);
@@ -393,6 +395,7 @@ section{
             margin-top: 10vh;
             display: block;
             text-align: left;
+            z-index: -1;
        
            
         }
