@@ -1,10 +1,14 @@
 
 bt2 = document.getElementById("send");
 bt1 = document.getElementById("bt");
+cv = document.getElementById("cv");
+bt1.onclick=function(){
 
-bt1.onclick=function()
-{
     alert("Hi😃, contact me to join my team. I'm looking for your response.")
+}
+
+cv.onclick = function(){
+    window.open("https://drive.google.com/file/d/1E4qxPrbN7QefdeA3gpnZcgF2Nm3o2oRe/view?usp=sharing");
 }
 
 bt2.onclick = function()
