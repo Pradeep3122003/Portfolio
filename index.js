@@ -4,7 +4,7 @@ bt1 = document.getElementById("but");
 cv = document.getElementById("cv");
 bt1.onclick = function(){
 
-    alert("Hi😃, contact me to join my team. I'm looking for your response.")
+    alert("Hi😃, contact me to join my team. I'm looking for your response.");
 }
 
 cv.onclick = function(){
