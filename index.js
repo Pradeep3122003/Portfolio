@@ -2,7 +2,7 @@
 bt2 = document.getElementById("send");
 bt1 = document.getElementById("but");
 cv = document.getElementById("cv");
-bt1.onclick=function(){
+bt1.onclick = function(){
 
     alert("Hi😃, contact me to join my team. I'm looking for your response.")
 }
