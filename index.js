@@ -1,6 +1,6 @@
 
 bt2 = document.getElementById("send");
-bt1 = document.getElementById("bt");
+bt1 = document.getElementById("but");
 cv = document.getElementById("cv");
 bt1.onclick=function(){
 
