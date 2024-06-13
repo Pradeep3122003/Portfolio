@@ -8,7 +8,7 @@ bt1.onclick = function(){
 }
 
 cv.onclick = function(){
-    window.open("https://drive.google.com/file/d/1E4qxPrbN7QefdeA3gpnZcgF2Nm3o2oRe/view?usp=sharing");
+    window.open("https://drive.google.com/file/d/1Pn7oVUkQcsp6x5gi-A4TQfkPNb9rNymI/view");
 }
 
 bt2.onclick = function()
